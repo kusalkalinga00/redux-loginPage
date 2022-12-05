@@ -1,18 +1,15 @@
 import React from "react";
 import { Button, Form, Input } from "antd";
 import "./loginpageStyle.css";
-import { useNavigate } from "react-router-dom";
 import { FetchUser } from "../features/userSlice";
-
-
+import { useDispatch, useSelector } from "react-redux";
 
 const LoginPage = () => {
-  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const onFinish = (values) => {
-    navigate("dashboard");
-    console.log("Success:", values);
-    <FetchUser value={values}/>
+    console.log("values on loginpage ", values);
+    dispatch(FetchUser({ values }));
   };
 
   const onFinishFailed = (errorInfo) => {
