@@ -1,0 +1,80 @@
+.form-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.heading-con {
+  padding-left: 10px;
+}
+.container {
+  display: inline-block;
+  width: 800px;
+  justify-content: center;
+  border: 2px solid;
+  border-color: #b2b1b9;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    24deg,
+    rgba(0, 0, 0, 1) 52%,
+    rgba(48, 48, 48, 1) 82%
+  );
+  border-radius: 11px;
+}
+
+.container:hover {
+  border-color: #d46b08;
+  box-shadow: 0px 0px 11px 0px #d46b08;
+}
+
+.heading-con {
+  border-bottom: 2px solid;
+  border-color: #b2b1b9;
+}
+
+.container:hover .heading-con {
+  border-color: #d46b08;
+}
+
+p {
+  color: #b2b1b9;
+}
+
+.ant-form-item-required {
+  color: #b2b1b9 !important;
+}
+
+.ant-btn {
+  width: 100% !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: 1px solid;
+  border-color: #b2b1b9;
+  font-size: 16px;
+  height: 40px;
+}
+.ant-btn:hover {
+  border-color: #d46b08;
+  color: #d46b08 !important;
+}
+
+.ant-input,
+.ant-input-affix-wrapper.ant-input-password {
+  background-color: transparent !important;
+  color: #fff;
+}
+.ant-input:hover,
+.ant-input-affix-wrapper.ant-input-password:hover,
+.ant-input:focus,
+.ant-input-affix-wrapper.ant-input-password:focus,
+.ant-input-affix-wrapper-focused {
+  border-color: #d46b08 !important;
+}
+
+.anticon.anticon-eye-invisible.ant-input-password-icon,
+.anticon.anticon-eye.ant-input-password-icon {
+  color: rgba(225, 225, 225, 0.9) !important;
+}
+
+.ant-input-affix-wrapper:hover {
+  border-color: #d46b08 !important;
+}
