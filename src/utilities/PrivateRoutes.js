@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 const PrivateRoutes = () => {
   const userLoggedin = useSelector((state) => state.user.logged);
-  console.log("Routing ?", userLoggedin);
+  console.log("Routing ?", userLoggedin); 
 
   return userLoggedin ? <Outlet /> : <Navigate to="/" />;
 };
